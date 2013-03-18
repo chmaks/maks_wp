@@ -1,0 +1,405 @@
+/*
+Theme Name: Twenty Ten
+Theme URI: http://wordpress.org/extend/themes/twentyten
+Description: The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the "Asides" and "Gallery" categories, and has an optional one-column page template that removes the sidebar.
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, flexible-header
+Text Domain: twentyten
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:14px Arial, sans-serif; background:#fff url("images/bg_main.jpg")left top repeat-x;  color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:14px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:14px 'arial', sans-serif; color:#000000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {width:1060px;
+margin:0 auto;
+background:#FFFFFF;
+}
+.insidepage {width:1060px;
+margin:0 auto;
+background:#FFFFFF;
+}
+ @font-face {
+    font-family: calibri; /* Имя шрифта */
+    src: url(fonts/calibri.ttf); /* Путь к файлу со шрифтом */
+	font-family: 'Britannic Bold'; /* Имя шрифта */
+    src: url(fonts/britannic.ttf); /* Путь к файлу со шрифтом */
+   }
+/*/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+overflow:hidden;
+padding:26px 40px 28px 40px;
+}
+h1{
+width:190px;
+height:58px;
+position:relative;
+float:left;
+display:block;
+
+}
+h1  img {position:absolute;
+
+}
+.insidepage .nav {margin-bottom:30px;}
+.nav {overflow:hidden;
+text-align:center;
+
+}
+.nav li {
+display:inline-block;
+margin:10px -1px 10px 0px;
+border-right:1px solid #CCCCCC;
+padding:6px 6px;
+}
+.nav li a{font-family:'Calibri';
+font-size:20px;
+text-decoration:none;
+padding:6px 13px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+font-stretch: expanded;
+
+color:#000;
+}
+.nav li a:hover{background:url("images/bg_nav.jpg") left center repeat-x;
+color:#fff;
+}
+.nav .current_page_item a{background:url("images/bg_nav.jpg") left center repeat-x;
+color:#fff;
+}
+.nav .page-item-49 {border-right:none;}
+.phone-main{
+float:right;
+width:172px;
+margin:6px 0 0 0px;
+height:30px;
+background:url("images/bg_phone_top.png") left center no-repeat;
+color:#3D4F95;
+font-size:24px;
+text-align:right;
+padding:5px 3px;
+border-left: 1px solid #fff;
+;
+}
+.content{overflow:hidden;}
+.content h2{
+float:left;
+font-size:20px;
+font-weight:normal;
+
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content{overflow:hidden;
+}
+.img-main{float:left;
+margin-right:10px;
+width:690px;
+height:390px;
+}
+.video{float:left;
+width:360px;
+height:188px;
+
+
+}
+.map{
+margin-top:8px;
+float:left;
+float:left;
+width:360px;
+height:190px;
+background:url("images/map.png") right top no-repeat;
+
+}
+.map a{
+font-family:'Britannic Bold';
+font-size:26px;
+letter-spacing:120%;
+text-decoration:none;
+color:#DF0014;
+display:block;
+padding:114px 0 0 17px;
+font-weight:bold;
+}
+
+.contacts{clear:both;
+overflow:hidden;
+border-bottom: 1px solid #D4D4D4;
+margin: 0 40px;
+}
+.contacts li {
+float:left;
+width:240px;
+height:102px;
+}
+.contacts h4 {font-size:16px;
+font-weight:bold;
+padding:24px 0 6px 92px;
+display:block;
+}
+.contacts  a {font-size:10px;
+padding-left:92px;
+display:block;
+text-decoration:none;
+color:#7C7C7C;
+}
+.contacts  a:hover {text-decoration:underline;
+}
+.mail{background:url("images/bg_mail.png") left center no-repeat;
+}
+.phone{background:url("images/bg_phone.png") left center no-repeat;
+}
+.office{background:url("images/bg_office.png") left center no-repeat;
+}
+.conf{background:url("images/bg_conf.png") left center no-repeat;
+}
+.content h2 {
+float:left;
+width:326px;
+font-size:20px;
+font-weight:bold;
+padding:24px 0px 0 40px
+}
+.content p {overflow:hidden;
+padding:24px 40px 24px 0;
+color:#595959;
+}
+.service-block{overflow:hidden;
+margin-left:40px;
+}
+.service-block li{float:left;}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer {clear:both;
+margin-top:22px;
+overflow:hidden;
+padding:0 40px 40px 40px;
+}
+.follow-us{
+float:left;
+font-size:16px;
+width:242px;
+padding-top:6px;
+color:#585858;
+font-weight:bold;
+}
+.follow-us ul{float:right;
+margin:-6px 5px 0 0;}
+.follow-us li {float:left;
+width:29px;
+height:29px;
+margin-right:12px;}
+.fb {width:29px;
+	height:29px;
+	display:block;
+	background-image: url("images/social.png") ;
+	background-position: 72px 0px;}
+.fb:hover {width:29px;
+	height:29px;
+	display:block;
+	background-image: url("images/social.png") ;
+	background-position: 72px 29px;
+	}
+.rss{width:29px;
+	height:29px;
+	display:block;
+	background-image: url("images/social.png") ;
+	background-position: 29px 0px;}
+	.rss:hover{width:29px;
+	height:29px;
+	display:block;
+	background-image: url("images/social.png") ;
+	background-position: 29px 29px;}
+.twit{width:29px;
+	height:29px;
+	display:block;
+	background-image: url("images/social.png") ;
+	background-position: 0px 0px;}
+	.twit:hover{width:29px;
+	height:29px;
+	display:block;
+	background-image: url("images/social.png") ;
+	background-position: 0px 29px;}
+.footer-more{padding:6px 0 12px 15px;
+overflow:hidden;
+border-left:1px solid #959595;
+display:block;}
+.footer-more {color:#959595;
+text-decoration:none;
+font-size:14px;}
+.footer-more a {color:#959595;
+text-decoration:none;
+font-size:14px;
+}
+.footer-more a:hover{text-decoration:underline;
+
+}
+/*---------------------------slidebox---------------------------------*/
+.slidebox {float:left;
+height:188px;
+width:1060px;
+margin-left:-40px;
+}
+/*---------------------------side bar---------------------------------*/
+.sidebar{
+width:362px;
+float:left;
+
+}
+.sidecontacts{margin:80px 34px 20px 40px;
+width:290px;
+}
+.sidecontacts li{
+border:1px solid #C2C2C2;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+padding:17px;
+}
+.sidecontacts h4{color:#7A7B7F;
+font-size:14px;
+font-weight:normal;
+}
+.sidecontacts span{color:#3D4F95;
+font-size:24px;
+}
+.sidecontacts  a {
+color:#3D4F95;
+font-size:14px;
+text-decoration:none;
+}
+.sidecontacts  a:hover{
+text-decoration:underline;
+}
+.phoneus{
+	background: url("images/bg_phoneus.png") 91% center no-repeat;
+}
+.skypeus{
+	background: url("images/bg_skypeus.png") 94% center no-repeat;
+}
+.mailus{
+	background: url("images/bg_mailus.png") 94% center no-repeat;
+}
+.trackus{
+	background: url("images/bg_trackus.png") 94% center no-repeat;
+}
+/*---------------------------about page---------------------------------*/
+.insidepage .content h2 {margin:28px 0 0 0;
+width:100%;
+overflow:hidden;
+padding: 0 0 0 0;
+font-size:32px;
+color:#3D4F95;
+font-weight:normal;
+}
+.insidepage .content p{
+padding:18px 40px 0 0;
+overflow:hidden;
+line-height:19px;
+color:#595959;
+}
+.insidepage a {text-decoration:none;
+color:#3D4F95;}
+.insidepage a:hover {text-decoration:underline;
+
+}
+.insidepage .footer {
+margin:40px;
+overflow:hiddin;
+border-top:1px solid #C2C2C2;
+padding:28px 0px;
+}
+.insidepage .follow-us{margin-right:80px;}
+.footernav {float:left;
+margin-right:32px;}
+.footernav h3 {font-size:12px;
+padding: 0 0 4px 0;
+}
+.footernav li a {font-size:12px;
+color:#359BCB;
+padding:3px 0;
+text-decoration:none;
+}
+.footernav li a:hover{text-decoration:underline;}
+.footeryear{float:right;
+color:#838383;}
+/*--------------------------make it page-----------------------------*/
+.insidepage .contacts li {
+border-bottom: 1px solid #D2D2D5;
+height:80px;
+width:290px;
+overflow:hidden;
+display:block;
+margin:0;
+padding:0;
+}
+.insidepage .contacts .office {
+border-bottom:none;}
+.insidepage .contacts{margin:20px 0 0 40px;
+border-bottom:none;
+}
+.insidepage .contacts dt{padding:10px 0 4px 92px;;}
+.benefitbox {overflow:hidden;
+background:#FFF6D4;
+ margin: 10px 40px 0 0;
+}
+.insidepage.benefitbox ul{list-style-type: circle;
+}
+.benefitbox h3{ font-size:18px;
+padding: 20px 0 20px 16px;
+}
+.benefitbox li{margin:0 10px 10px 44px;
+list-style-type: disc;}
